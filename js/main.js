@@ -66,14 +66,14 @@ bottoneAnnulla.addEventListener('click', function() {
     container.className = ('hidden');
 
     // Input
-    var nome = document.getElementById('nome').value;
-    console.log(nome);
-
-    var kmDaPercorrere = document.getElementById('km').value;
-    console.log(kmDaPercorrere);
-
-    var fasciaEta = document.getElementById('fascia-eta').value;
-    console.log(fasciaEta);
+    document.getElementById('nome').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('fascia-eta').value = '';
+    
     // Valori biglietto
-        
+    document.getElementById('nome-passeggero').innerHTML = '';
+    document.getElementById('offerta-applicata').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('codice-cp').innerHTML = '';
+    document.getElementById('costo-biglietto').innerHTML = '';
 });
